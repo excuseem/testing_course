@@ -1,5 +1,3 @@
-# ScientificCalculator
-
 Тест-кейсы: 
 
 `app/java/net.practicalcoding.scientificcalculator/EmTests.java`
