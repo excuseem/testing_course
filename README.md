@@ -1,65 +1,56 @@
 # ScientificCalculator
 
-Here are the colors:
+Тест-кейсы: 
 
-    <!-- Colors for the background -->
-    <color name="blackStart">#060607</color>
-    <color name="blueBlack">#111f28</color>
-    <color name="greyEnd">#484e52</color>
+`app/java/net.practicalcoding.scientificcalculator/EmTests.java`
 
-    <!-- Colors to add a little pop to the buttons -->
-    <color name="greyAccent">#afb9c5</color>
-    <color name="tanAccent">#e3cdb3</color>
+1) Простое сложение: 
+    * клик 1
+    * клик +
+    * клик 8
+    * клик =
+    * на экране 9.0, на превью 1+8
 
-    <!-- Clear Button Colors -->
-    <color name="redBackground">#5a020b</color>
-    <color name="redAccent">#ff0000</color>
+2) Тест стирания:
+    * клик 6
+    * клик 9
+    * клик С
+    * на экране пусто, на превью пусто
 
-    <!-- Equals Button Colors -->
-    <color name="greenBackground">#013300</color>
-    <color name="greenAccent">#2ffd64</color>
+3) Сложное умножение: 
+    * клик 9
+    * клик 8
+    * клик умножить
+    * клик 3
+    * клик 2
+    * клик =
+    * на экране 3136.0, на превью 98х32
 
-    <!-- Math Operator Button Colors -->
-    <color name="purpleBackground">#330133</color>
-    <color name="purpleAccent">#de00de</color>
+4) Тест некорректно введенных данных:
+    * клик )
+    * клик )
+    * клик 0
+    * клик )
+    * клик =
+    * на экране NaN, на превью ))0)
 
-Here are the strings:
+5) Тест одиночного стирания:
+    * клик 8
+    * клик разделить
+    * клик 7
+    * клик стереть
+    * клик 3
+    * клик =
+    * на экране 2.6666666666666665, на превью 8÷3
 
-    <string name="oneText">1</string>
-    <string name="twoText">2</string>
-    <string name="threeText">3</string>
-    <string name="fourText">4</string>
-    <string name="fiveText">5</string>
-    <string name="sixText">6</string>
-    <string name="sevenText">7</string>
-    <string name="eightText">8</string>
-    <string name="nineText">9</string>
-    <string name="zeroText">0</string>
+6) Тест скобок:
+    * клик (
+    * клик 9
+    * клик +
+    * клик 3
+    * клик ) 
+    * клик умножить
+    * клик 2
+    * клик =
+    * на экране 24.0, на превью (9+3)×2
 
-    <string name="clearText">C</string>
-    <string name="parenthesesOpenText">(</string>
-    <string name="parenthesesCloseText">)</string>
-    <string name="divideText">÷</string>
-    <string name="multiplyText">×</string>
-    <string name="addText">+</string>
-    <string name="subtractText">-</string>
-    <string name="decimalText">.</string>
-    <string name="equalsText">=</string>
-
-    <string name="trigSinText">sin</string>
-    <string name="trigCosText">cos</string>
-    <string name="trigTanText">tan</string>
-    <string name="trigArcSinText">sin<sup><small>-1</small></sup></string>
-    <string name="trigArcCosText">cos<sup><small>-1</small></sup></string>
-    <string name="trigArcTanText">tan<sup><small>-1</small></sup></string>
-    <string name="naturalLogText">ln</string>
-    <string name="LogText">log</string>
-    <string name="squareRootText">√</string>
-    <string name="absoluteValueText">|x|</string>
-    <string name="piText">π</string>
-    <string name="eText">e</string>
-    <string name="xSquaredText">x<sup><small>2</small></sup></string>
-    <string name="xPowerYText">x<sup><small>y</small></sup></string>
-    <string name="isPrimeFunctionText">prime</string>
-
-    <string name="backspace"> </string>
